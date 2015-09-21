@@ -23,4 +23,12 @@ describe('String#leetspeak') do
  it('replaces every "s" in a string with a "z"') do
     expect("roses".leetspeak).to(eq("r0z3z"))
   end
+
+  # it('does NOT replace the first letter when it is an s') do
+  #   expect("sassafrass".leetspeak).to(eq("zazzafrazz"))
+  # end
+
+  it('replaces letters correctly in a string of words') do
+    expect("I scream you scream we all scream for raspberry ice cream".leetspeak).to(eq("1 zcr3am y0u zcr3am w3 all zcr3am f0r razpb3rry ic3 cr3am"))
+  end
 end

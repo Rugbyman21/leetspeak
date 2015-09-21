@@ -2,10 +2,13 @@
 
 class String
   define_method(:leetspeak) do
-
     sentence = self
+    # sentence.capitalize()
     sentence.gsub(/[eoIs]/, 'e' => 3, 'o' => 0, 'I' => 1, 's' => 'z')
+    
   end
+
+
 end
 #     new_word = []
 #     split_sentence = self.split('')
